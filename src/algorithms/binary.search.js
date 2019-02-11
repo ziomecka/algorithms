@@ -16,19 +16,19 @@ const algorithm = ( item, sortedArr ) => {
         return undefined;
     }
 
-    let start = sortedArr[0];
-    let end = sortedArr[ length - 1 ];
+    let start = 0;
+    let end = length - 1;
     let middle = Math.floor( (start + end ) / 2);
-    let ind = sortedArr.indexOf(middle);
+    let middleItem = sortedArr[ middle ];
 
     return (
-        item === middle
+        item === middleItem
             ? item
-            : binarySearch(
+            : algorithm(
                 item,
-                (item > middle)
-                    ? sortedArr.slice(ind + 1)
-                    : sortedArr.slice(0, ind)
+                (item > middleItem)
+                    ? sortedArr.slice( middle + 1 )
+                    : sortedArr.slice( 0, middle )
             )
     );
 };
