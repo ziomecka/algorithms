@@ -1,7 +1,7 @@
-let i = 0;
+let runs = 0;
 
-const binarySearch = ( item, sortedArr ) => {
-    i++;
+const algorithm = ( item, sortedArr ) => {
+    runs++;
     const { length } = sortedArr;
 
     if ( length === 1 ) {
@@ -33,10 +33,4 @@ const binarySearch = ( item, sortedArr ) => {
     );
 };
 
-let a = [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ];
-
-let expectedRuns = Math.log(a.length);
-
-console.log(`${binarySearch(7, a)} in ${i} runs. Expected runs: ${ expectedRuns }`);
-
-module.exports = undefined;
+module.exports = { algorithm, runs };
