@@ -1,5 +1,5 @@
 function algorithm ( str ) {
-    str = str.replace( /\s/, '' );
+    str = str.replace( /\s|\?|'|\./g, '' ).toLowerCase();
 
     const { length } = str;
 
