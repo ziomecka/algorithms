@@ -1,0 +1,34 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "description": "I learn algorithms",
+  "main": "binary.search.js",
+  "scripts": {
+    "test": "karma start karma.conf.js",
+    "webpack": "webpack webpack.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ziomecka/algorithms.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Katarzyna Ziomek-Zdanowicz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ziomecka/algorithms/issues"
+  },
+  "homepage": "https://github.com/ziomecka/algorithms#readme",
+  "devDependencies": {
+    "jasmine": "3.3.1",
+    "jasmine-core": "3.3.0",
+    "karma": "4.0.0",
+    "karma-chrome-launcher": "2.2.0",
+    "karma-cli": "2.0.0",
+    "karma-jasmine": "2.0.1",
+    "karma-webpack": "3.0.5",
+    "webpack": "4.29.3",
+    "webpack-cli": "3.2.3"
+  }
+}
